@@ -57,37 +57,56 @@ Look at the documentation for [filter][]. The syntax snippet is provided as:
 var newArray = arr.filter(callback(element[, index[, array]])[, thisArg])
 ```
 
-Here, we're told that on an `Array`, (`arr`) we add a `.filter` and we provide
-a `callback` and a `thisArg`. Remember, because of JavaScript's non-enforcement
-of _arity_, we don't **have to** provide all the arguments. We'll talk a lot
-more about `this` and `thisArg` shortly, but for the moment, we can _leave it
-out_.
+Here, we're told that on an `Array` (`arr`), we add a `.filter` and then,
+between `()`, we provide a `callback` and a `thisArg`.
 
-Let's look some more about the `callback`. The documentation provides what
-parameters are supported by the callback. JavaScript will hand off, per each
-element, to the callback an `element`, the `index` number of that element, and
-`array`, the whole darn `Array` itself. Yet again, because of _arity_
-non-enforcement, we don't have to add parameters for `index` or `array`, or
-`element` even. Furthermore, in our callbacks, we can name our parameters
-whatever we like. JavaScript always makes those 3 arguments available to our
-callback. What to call them and whether to use them is entirely up to us.
-See examples below to see how we can play with this.
+> **REMEMBER** Because of JavaScript's non-enforcement of _arity_, we
+> don't **have to** provide all the arguments.
+
+We'll talk a lot more about `this` and `thisArg` shortly, but for the moment,
+we can _leave it out_.
+
+Let's learn some more about the `callback`. The documentation tells us what
+parameters it supports.
+
+```js
+// ... callback(element[, index[, array]]) ...)
+```
+
+Possible parameters:
+
+1. `element`
+2. `index` (optional)
+3. `array` (optional)
+
+JavaScript will move through the `Array` that `filter()` was invoked on and
+pass the `element`, the `index` of that element, and the whole darn `array`
+to the callback (called in the documentation, "`callback`").
+
+Yet again, because of _arity_ non-enforcement, we don't *have* to add
+parameters for `index` or `array`, or `element` even. Furthermore, in our
+callbacks, we can name our parameters whatever we like. JavaScript always
+makes those 3 arguments _available_ to our callback. What to call them and
+whether to use them is entirely up to us. See examples below to see how we
+can play with this.
 
 Now, what happens in `callback`? The documentation tells us:
 
 > Function is a predicate, to test each element of the array. Return true to
 > keep the element, false otherwise. It accepts three arguments:
 
-This function runs and has access to each element. If we return true, we'll get
-that element (then it'd be like `map` where we simply return what we got!). So
-we can use the `element` or the `array` or the `index` or some interaction
-between them to create an expression that `return`s a Boolean value from
-`callback`. If `true`, it goes into the new `Array`; else, it's left out.
+This function runs and has access to the parameters we just explained.
 
-> **PRO-TIP**: After looking at our description, look at MDN's and make sure
-> your ability to read MDN documentation is aligned with our guide in
-> interpreting the documentation. Being able to learn from MDN is a core skill
-> we must continually develop!
+If the _call_ to `callback` returns `true`, that element will be added to an
+invisible "keeper" `Array`; else, it's left out.
+
+We can use the `element` or the `array` or the `index` or (more typically)
+some interaction between them to create an expression that `return`s a
+Boolean value from `callback`.
+
+> **PRO-TIP**: After reading our description above, look at MDN's and make sure
+> you know how to explain filter in your own words. Being able to learn from
+> MDN is a core skill we must continually develop!
 
 ```js
 [10, 20, 30, 40]
