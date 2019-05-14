@@ -23,13 +23,8 @@ _already_ has these methods built into its `Array` data type!
 ## Use `reduce` to Reduce an `Array` to a Value
 
 ```js
-[10, 20, 30, 40]
-  .reduce(function(i, memo) {
-    return i + memo;
-  }) //=> 100
-  [(10, 20, 30, 40)].reduce(function(i, memo) {
-    return i + memo;
-  }, 100); //=> 200
+[10, 20, 30, 40].reduce(function(memo, i) { return memo + i }) //=> 100
+[10, 20, 30, 40].reduce(function(memo, i) { return memo + i }, 100) //=> 200
 ```
 
 Remember, **_JavaScript loves functions_.** By being able to pass functions
