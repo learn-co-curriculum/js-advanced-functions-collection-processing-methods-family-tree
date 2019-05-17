@@ -1,4 +1,4 @@
-## JavaScript Advanced Functions: The Collection-Processing Methods Family Tree
+# JavaScript Advanced Functions: The Collection-Processing Methods Family Tree
 
 ## Learning Goals
 
