@@ -49,14 +49,8 @@ you should look up and master.
 Look at the documentation for [filter][]. The syntax snippet is provided as:
 
 ```js
-var newArray = arr.filter(callback(element[, index[, array]])[, thisArg])
+let newArray = arr.filter(callback(element[, index[, array]])[, thisArg])
 ```
-
-> **NOTE**: This documentation uses `var` instead of `let`. In order to 
-> honor that we're quoting another source, we've left the keyword `var`.
-> You should prefer `let`, but it's good to recognize that sometimes
-> documentation lags behind the current practice and you must do some 
-> thoughtful interpretation on your own.
 
 Here, we're told that on an `Array` (`arr`), we add a `.filter` and then,
 between `()`, we provide a `callback` and a `thisArg`.
