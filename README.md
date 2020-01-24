@@ -104,14 +104,15 @@ Boolean value from `callback`.
 > MDN is a core skill we must continually develop!
 
 ```js
-[10, 20, 30, 40]
-  .filter(function() {
+[10, 20, 30, 40].filter(function() {
     return true;
   }) //=> [10, 20, 30, 40] (map, basically)
-  [(10, 20, 30, 40)].filter(function(e) {
+  
+  [10, 20, 30, 40].filter(function(e) {
     return e < 30;
   }) //=> [10, 20]
-  [(10, 20, 30, 40)].filter(function(e, index) {
+  
+  [10, 20, 30, 40].filter(function(e, index) {
     return index % 2 === 0;
   }); // even-index elements
 ```
