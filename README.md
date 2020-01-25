@@ -114,7 +114,7 @@ Boolean value from `callback`.
   
   [10, 20, 30, 40].filter(function(e, index) {
     return index % 2 === 0;
-  }); // even-index elements
+  }) //=> [10, 30] (elements with an even-numbered index)
 ```
 
 1. Map a collection
