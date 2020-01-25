@@ -38,7 +38,7 @@ versions JavaScript provides you:
 
 ## Use JavaScript Documentation to Learn More About Other Variations on `map` and `reduce`
 
-Now that we understand the "Character of Collection-Processing Methods" we are
+Now that we understand the "Character of Collection Processing" we are
 ready to unleash the full power of this module! Instead of merely repeating
 the documentation, we're going to help you apply your understanding to the
 `filter` method, and then we're going to give you a list of document resources
@@ -130,7 +130,7 @@ These are the collection-processing methods you should **_memorize_** and
 practice heavily. They're going to be your friends every day in
 JavaScript-land. There are other collection-processing methods that you might
 not memorize, but it's pretty common for a developer to realize that they're
-working in the "Character of collection-processing methods" and think, "Hm,
+working in the "Character of Collection Processing" and think, "Hm,
 maybe there's a collection-processing method for that...." When that moment
 hits, the developer comes _back_ to the documentation and look for that
 "just-right" collection-processing method.
