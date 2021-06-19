@@ -55,6 +55,10 @@ let newArray = arr.filter(callback(element[, index[, array]])[, thisArg])
 Here, we're told that on an `Array` (`arr`), we add a `.filter` and then,
 between `()`, we provide a `callback` and a `thisArg`.
 
+In the documentation for the example above, parameters listed in `[]` brackets
+are **optional**. So for the `filter` method, the requirement is that we must 
+pass a `callback` function as the first argument.
+
 > **REMEMBER** Because of JavaScript's non-enforcement of _arity_, we
 > don't **have to** provide all the arguments.
 
@@ -137,7 +141,7 @@ hits, the developer comes _back_ to the documentation and look for that
 
 - [`every`][every]: Did all elements satisfy the callback?
 - [`find`][find]: Find the first element that satisfies the callback
-- [`findIndex`][findindex]: Find the first element that satisfies the callback's index
+- [`findIndex`][findindex]: Find the first index that satisfies the callback
 - [`map`][map]: Transform every element and create a new array
 - [`reduce`][reduce]: Reduce every element into a new value
 - [`some`][some]: Did any element satisfy the callback?
