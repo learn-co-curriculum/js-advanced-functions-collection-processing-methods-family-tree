@@ -141,7 +141,7 @@ hits, the developer comes _back_ to the documentation and look for that
 
 - [`every`][every]: Did all elements satisfy the callback?
 - [`find`][find]: Find the first element that satisfies the callback
-- [`findIndex`][findindex]: Find the first index that satisfies the callback
+- [`findIndex`][findindex]: Find the index of the first element that satisfies the callback
 - [`map`][map]: Transform every element and create a new array
 - [`reduce`][reduce]: Reduce every element into a new value
 - [`some`][some]: Did any element satisfy the callback?
